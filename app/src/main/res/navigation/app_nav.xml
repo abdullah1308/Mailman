@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/inbox_fragment">
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.example.mailman.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/inbox_fragment"
+        android:name="com.example.mailman.InboxFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_inbox" />
+</navigation>

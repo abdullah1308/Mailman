@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533395960546",
+    "project_id": "mailman-359ea",
+    "storage_bucket": "mailman-359ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533395960546:android:ffcb89c558ff6019f8e4bb",
+        "android_client_info": {
+          "package_name": "com.example.mailman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533395960546-k2isjea2gjkq111mslj1rfv0cenf7kl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsValFMMcftRM8DV9ZshX_NV2anRo14J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533395960546-k2isjea2gjkq111mslj1rfv0cenf7kl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
