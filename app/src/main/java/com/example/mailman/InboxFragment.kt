@@ -1,6 +1,7 @@
 package com.example.mailman
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,10 @@ class InboxFragment : Fragment() {
     ): View {
         viewBinding = FragmentInboxBinding.inflate(layoutInflater)
 
+        viewBinding.compose.setOnClickListener {
+            val intent = Intent(activity, ComposeActivity::class.java)
+            startActivity(intent)
+        }
         return viewBinding.root
     }
 }

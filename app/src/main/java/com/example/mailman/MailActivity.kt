@@ -6,7 +6,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.mailman.databinding.ActivityMailBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MailActivity : AppCompatActivity() {
@@ -21,5 +20,10 @@ class MailActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.inbox_fragment, R.id.account_fragment))
         setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

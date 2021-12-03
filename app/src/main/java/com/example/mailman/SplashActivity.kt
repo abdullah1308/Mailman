@@ -15,6 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        // Getting the current user
         mAuth = FirebaseAuth.getInstance()
         val user = mAuth.currentUser
 

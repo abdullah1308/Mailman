@@ -26,6 +26,7 @@ class AccountFragment : Fragment() {
     ): View? {
         viewBinding = FragmentAccountBinding.inflate(layoutInflater)
 
+        // Getting the signed-in user
         gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
@@ -35,11 +36,12 @@ class AccountFragment : Fragment() {
         mAuth = FirebaseAuth.getInstance()
         val currentUser = mAuth.currentUser
 
+        // Binding user data to the views
         viewBinding.nameTxt.text = currentUser?.displayName
         viewBinding.emailTxt.text = currentUser?.email
-
         Glide.with(this).load(currentUser?.photoUrl).into(viewBinding.profileImage)
 
+        // Setting up the sign-out button
         viewBinding.signOutBtn.setOnClickListener{
             mAuth.signOut()
             googleSignInClient.signOut()
