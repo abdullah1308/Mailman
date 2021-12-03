@@ -9,7 +9,7 @@ Setup this project using either of the following methods -
     
  - Download the apk from the following google drive link and install on any phone having android version 5.0 (Lollipop) or greater.
  
-    `placeholder`
+    `https://drive.google.com/file/d/1tDUkUnvITfo2qf3qT3nHsqZ9orWh-zIQ/view?usp=sharing`
 
 ## References
 
