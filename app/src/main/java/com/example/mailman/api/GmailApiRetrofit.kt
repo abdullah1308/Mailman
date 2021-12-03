@@ -4,7 +4,7 @@ import model.MessageList
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface GmailApi {
+interface GmailApiRetrofit {
 
     @GET("{userId}/messages")
     suspend fun getMessageList(

@@ -10,6 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/splash_screen"/>
+        android:src="@drawable/splash_screen_postman_by_rigo_peter_from_the_noun_project"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

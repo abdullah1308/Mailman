@@ -17,6 +17,7 @@ class ComposeActivity : AppCompatActivity() {
         viewBinding = ActivityComposeBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
 
+        // Setting up the action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.title = "Compose"

@@ -7,7 +7,7 @@ class Repository {
 
     suspend fun getMessageList(): MessageList {
         // TODO: pass user email as parameter
-        return RetrofitInstance.api.getMessageList(null)
+        return RetrofitInstance.API_RETROFIT.getMessageList(null)
     }
 
 }

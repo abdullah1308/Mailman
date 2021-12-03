@@ -29,7 +29,7 @@ object RetrofitInstance {
             .build()
     }
 
-    val api: GmailApi by lazy {
-        retrofit.create(GmailApi::class.java)
+    val API_RETROFIT: GmailApiRetrofit by lazy {
+        retrofit.create(GmailApiRetrofit::class.java)
     }
 }
